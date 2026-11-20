@@ -10,7 +10,7 @@
     <string name="appconfig_close">閉じる</string>
     <string name="appconfig_confirm">確認</string>
     <string name="appconfig_open_link">リンクを開く</string>
-    <string name="appconfig_test_prefix">[テスト] </string>
+    <string name="appconfig_test_prefix">[テスト]&#160;</string>
     <string name="appconfig_reply_title">ご意見への返信</string>
     <string name="appconfig_your_message">お送りいただいた内容</string>
     <string name="appconfig_feedback_title">ご意見・ご要望</string>

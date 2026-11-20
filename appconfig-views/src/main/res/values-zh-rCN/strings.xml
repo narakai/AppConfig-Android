@@ -10,7 +10,7 @@
     <string name="appconfig_close">关闭</string>
     <string name="appconfig_confirm">确认</string>
     <string name="appconfig_open_link">打开链接</string>
-    <string name="appconfig_test_prefix">[测试] </string>
+    <string name="appconfig_test_prefix">[测试]&#160;</string>
     <string name="appconfig_reply_title">反馈回复</string>
     <string name="appconfig_your_message">你的反馈</string>
     <string name="appconfig_feedback_title">意见反馈</string>

@@ -10,7 +10,7 @@
     <string name="appconfig_close">Close</string>
     <string name="appconfig_confirm">OK</string>
     <string name="appconfig_open_link">Open link</string>
-    <string name="appconfig_test_prefix">[TEST] </string>
+    <string name="appconfig_test_prefix">[TEST]&#160;</string>
     <string name="appconfig_reply_title">Reply to your feedback</string>
     <string name="appconfig_your_message">Your message</string>
     <string name="appconfig_feedback_title">Send feedback</string>
