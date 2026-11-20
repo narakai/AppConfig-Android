@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appconfig_update_title">Update available</string>
+    <string name="appconfig_update_body">Version %1$s is available with the latest fixes and features.</string>
+    <string name="appconfig_force_update_title">Update required</string>
+    <string name="appconfig_force_update_body">This version is no longer supported. Please update to keep using the app.</string>
+    <string name="appconfig_update">Update</string>
+    <string name="appconfig_later">Later</string>
+    <string name="appconfig_skip_version">Skip this version</string>
+    <string name="appconfig_close">Close</string>
+    <string name="appconfig_confirm">OK</string>
+    <string name="appconfig_open_link">Open link</string>
+    <string name="appconfig_test_prefix">[TEST] </string>
+    <string name="appconfig_reply_title">Reply to your feedback</string>
+    <string name="appconfig_your_message">Your message</string>
+    <string name="appconfig_feedback_title">Send feedback</string>
+    <string name="appconfig_feedback_bug">Bug</string>
+    <string name="appconfig_feedback_request">Request</string>
+    <string name="appconfig_feedback_other">Other</string>
+    <string name="appconfig_feedback_hint">What happened, or what would you like?</string>
+    <string name="appconfig_feedback_contact">Email (optional)</string>
+    <string name="appconfig_feedback_send">Send</string>
+    <string name="appconfig_feedback_sent">Thank you! Replies will appear here and when you open the app.</string>
+    <string name="appconfig_feedback_failed">Could not send. Please try again later.</string>
+    <string name="appconfig_feedback_history">Your feedback</string>
+    <string name="appconfig_feedback_reply">Reply</string>
+    <string name="appconfig_install_id">Install ID: %1$s</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appconfig_update_title">アップデートがあります</string>
+    <string name="appconfig_update_body">バージョン %1$s が利用できます。不具合の修正や新機能が含まれています。</string>
+    <string name="appconfig_force_update_title">アップデートが必要です</string>
+    <string name="appconfig_force_update_body">このバージョンはサポートを終了しました。引き続きご利用いただくには、アップデートしてください。</string>
+    <string name="appconfig_update">アップデート</string>
+    <string name="appconfig_later">あとで</string>
+    <string name="appconfig_skip_version">このバージョンをスキップ</string>
+    <string name="appconfig_close">閉じる</string>
+    <string name="appconfig_confirm">確認</string>
+    <string name="appconfig_open_link">リンクを開く</string>
+    <string name="appconfig_test_prefix">[テスト] </string>
+    <string name="appconfig_reply_title">ご意見への返信</string>
+    <string name="appconfig_your_message">お送りいただいた内容</string>
+    <string name="appconfig_feedback_title">ご意見・ご要望</string>
+    <string name="appconfig_feedback_bug">不具合</string>
+    <string name="appconfig_feedback_request">要望</string>
+    <string name="appconfig_feedback_other">その他</string>
+    <string name="appconfig_feedback_hint">起きたこと、ほしい機能などをお書きください</string>
+    <string name="appconfig_feedback_contact">メールアドレス（任意）</string>
+    <string name="appconfig_feedback_send">送信</string>
+    <string name="appconfig_feedback_sent">ありがとうございます。返信はこの画面とアプリ起動時に表示されます。</string>
+    <string name="appconfig_feedback_failed">送信できませんでした。しばらくしてからもう一度お試しください。</string>
+    <string name="appconfig_feedback_history">これまでのご意見</string>
+    <string name="appconfig_feedback_reply">返信</string>
+    <string name="appconfig_install_id">インストール ID：%1$s</string>
+</resources>
