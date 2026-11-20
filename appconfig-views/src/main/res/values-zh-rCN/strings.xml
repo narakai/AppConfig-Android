@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appconfig_update_title">有新版本</string>
+    <string name="appconfig_update_body">版本 %1$s 已发布，包含问题修复和新功能。</string>
+    <string name="appconfig_force_update_title">需要更新</string>
+    <string name="appconfig_force_update_body">当前版本已停止支持，请更新后继续使用。</string>
+    <string name="appconfig_update">更新</string>
+    <string name="appconfig_later">稍后</string>
+    <string name="appconfig_skip_version">跳过此版本</string>
+    <string name="appconfig_close">关闭</string>
+    <string name="appconfig_confirm">确认</string>
+    <string name="appconfig_open_link">打开链接</string>
+    <string name="appconfig_test_prefix">[测试] </string>
+    <string name="appconfig_reply_title">反馈回复</string>
+    <string name="appconfig_your_message">你的反馈</string>
+    <string name="appconfig_feedback_title">意见反馈</string>
+    <string name="appconfig_feedback_bug">问题</string>
+    <string name="appconfig_feedback_request">建议</string>
+    <string name="appconfig_feedback_other">其他</string>
+    <string name="appconfig_feedback_hint">遇到了什么问题，或者想要什么功能？</string>
+    <string name="appconfig_feedback_contact">邮箱（选填）</string>
+    <string name="appconfig_feedback_send">发送</string>
+    <string name="appconfig_feedback_sent">谢谢！回复会显示在这里，打开 App 时也会提示。</string>
+    <string name="appconfig_feedback_failed">发送失败，请稍后再试。</string>
+    <string name="appconfig_feedback_history">我的反馈</string>
+    <string name="appconfig_feedback_reply">回复</string>
+    <string name="appconfig_install_id_copied">已复制安装 ID</string>
+</resources>

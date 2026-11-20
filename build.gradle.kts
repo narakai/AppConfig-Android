@@ -7,5 +7,5 @@ plugins {
 // Coordinates for JitPack: com.github.narakai.AppConfig-Android:<module>:<tag>
 allprojects {
     group = "com.github.narakai.AppConfig-Android"
-    version = "0.1.1"
+    version = "0.2.0"
 }

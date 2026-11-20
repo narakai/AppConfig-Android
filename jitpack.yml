@@ -1,4 +1,4 @@
 jdk:
   - openjdk17
 install:
-  - ./gradlew :appconfig:publishToMavenLocal :appconfig-compose:publishToMavenLocal :appconfig-play:publishToMavenLocal
+  - ./gradlew :appconfig:publishToMavenLocal :appconfig-compose:publishToMavenLocal :appconfig-play:publishToMavenLocal :appconfig-views:publishToMavenLocal

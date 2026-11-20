@@ -26,3 +26,4 @@ rootProject.name = "AppConfigAndroid"
 include(":appconfig")
 include(":appconfig-compose")
 include(":appconfig-play")
+include(":appconfig-views")
