@@ -24,5 +24,5 @@
     <string name="appconfig_feedback_failed">发送失败，请稍后再试。</string>
     <string name="appconfig_feedback_history">我的反馈</string>
     <string name="appconfig_feedback_reply">回复</string>
-    <string name="appconfig_install_id">安装 ID：%1$s</string>
+    <string name="appconfig_install_id_copied">已复制安装 ID</string>
 </resources>

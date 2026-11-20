@@ -45,7 +45,7 @@ ReviewPrompt.maybeAsk(activity)
   outside); it re-checks whenever the app comes back, and uses the last known minimum when offline.
 - **Soft update**: Update / Later / Skip this version.
 - **Testers**: debug builds (`tester = true`) and installs added on the server see test-only notices,
-  config and version settings. The install ID is shown at the bottom of the feedback dialog.
+  config and version settings. Long-press the feedback dialog title to copy the install ID (it is not displayed).
 - **Privacy**: a random install ID (not tied to the user, account or device) for daily active counts,
   version share and feedback replies. No IP addresses are stored by the reference server.
 

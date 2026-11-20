@@ -24,5 +24,5 @@
     <string name="appconfig_feedback_failed">Could not send. Please try again later.</string>
     <string name="appconfig_feedback_history">Your feedback</string>
     <string name="appconfig_feedback_reply">Reply</string>
-    <string name="appconfig_install_id">Install ID: %1$s</string>
+    <string name="appconfig_install_id_copied">Install ID copied</string>
 </resources>

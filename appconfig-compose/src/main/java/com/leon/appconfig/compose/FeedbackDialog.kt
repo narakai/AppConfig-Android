@@ -1,5 +1,7 @@
 package com.leon.appconfig.compose
 
+import android.widget.Toast
+import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -8,7 +10,6 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.CircularProgressIndicator
@@ -27,7 +28,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.platform.LocalClipboardManager
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import com.leon.appconfig.AppConfig
@@ -39,7 +44,7 @@ import java.util.Date
 
 /**
  * Feedback form plus this user's earlier feedback and your replies.
- * The install ID at the bottom is what testers send you to be added on the admin page.
+ * The install ID is not shown; long-pressing the title copies it, for adding a tester on the admin page.
  */
 @Composable
 fun FeedbackDialog(onDismiss: () -> Unit) {
@@ -51,6 +56,9 @@ fun FeedbackDialog(onDismiss: () -> Unit) {
     var sending by remember { mutableStateOf(false) }
     var result by remember { mutableStateOf<Boolean?>(null) }
     val history = remember { mutableStateListOf<FeedbackItem>() }
+    val context = LocalContext.current
+    val clipboard = LocalClipboardManager.current
+    val copiedText = stringResource(R.string.appconfig_install_id_copied)
 
     suspend fun loadHistory() {
         AppConfig.fetchFeedback().onSuccess { items ->
@@ -63,7 +71,19 @@ fun FeedbackDialog(onDismiss: () -> Unit) {
 
     AlertDialog(
         onDismissRequest = { if (!sending) onDismiss() },
-        title = { Text(stringResource(R.string.appconfig_feedback_title)) },
+        // Long-press the title to copy the install ID (for adding this device as a tester).
+        // It is deliberately not shown in the dialog.
+        title = {
+            Text(
+                stringResource(R.string.appconfig_feedback_title),
+                modifier = Modifier.pointerInput(Unit) {
+                    detectTapGestures(onLongPress = {
+                        clipboard.setText(AnnotatedString(AppConfig.installId))
+                        Toast.makeText(context, copiedText, Toast.LENGTH_SHORT).show()
+                    })
+                },
+            )
+        },
         text = {
             Column(
                 verticalArrangement = Arrangement.spacedBy(10.dp),
@@ -107,13 +127,6 @@ fun FeedbackDialog(onDismiss: () -> Unit) {
                     history.forEach { item -> HistoryItem(item) }
                 }
 
-                SelectionContainer {
-                    Text(
-                        stringResource(R.string.appconfig_install_id, AppConfig.installId),
-                        style = MaterialTheme.typography.labelSmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    )
-                }
             }
         },
         confirmButton = {
